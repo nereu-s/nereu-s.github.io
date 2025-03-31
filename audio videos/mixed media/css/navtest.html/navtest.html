@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Naivation Bar</title>
+    <Style>
+        * {font-family:sans-serif; }
+        nav {
+            background: green;
+            width: 100%;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 999;
+            display:flex;
+            justify-content: space-between;
+        }
+        
+        nav a {
+            font-weight: bold;
+            color: greenyellow;
+            background: #333;
+            padding: 100px;
+            text-decoration: none;
+        }
+
+        p {
+            font-weight: 80px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            
+        }
+        nav a:hover { background: #777;}
+        main { padding-top: 3.5rem; }
+        body { background: lightblue; color: #111}
+        footer { text-align: center; }
+
+        @media {max-width 768px} {
+            body { background: darkslategray; color: white; }
+            main { padding-top: 30vh; }
+            nav a { border: 10px solid white;
+                    text-align: center;
+            }
+        }
+
+        @media {max-width: 480px} {
+            body { 
+                background: darkslateblue; background:linear-gradient(90d, darkblue, #483d8b)
+            }
+        }
+    </Style>
+</head>
+<body>
+    <nav>
+        <a href="#top">Top</a>
+        <a href="#bot">Bottom</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+    <main id="top">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper rutrum tempor. Proin tincidunt augue tincidunt faucibus facilisis. Nullam rutrum lorem a tortor congue, eu scelerisque dui tincidunt. Phasellus at sapien vitae mauris bibendum blandit. Praesent luctus ultrices imperdiet. Maecenas vel odio ut elit commodo semper. Fusce ac rutrum turpis, id porttitor tortor. Praesent erat tortor, blandit ultricies fringilla quis, iaculis in massa. Nullam suscipit ullamcorper elementum. Praesent porta volutpat tellus, et venenatis purus elementum et. Donec sit amet sodales felis, vel ultrices ipsum.
+        </p>
+    </main>
+    <footer id="bot">
+        <p>This is the bottom of the page!</p>
+    </footer>
+</body>
+</html>
