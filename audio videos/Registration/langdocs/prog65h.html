@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog65h</title>
+</head>
+<body>
+    <lable for="pnds">Pounds: </lable>
+    <input type="number" id="pnds">
+
+    <lable for="shls">Shillings: </lable>
+    <input type="number" id="shls">
+
+    <lable for="pnce">Pence: </lable>
+    <input type="number" id="pnce">
+
+    <buttonon onclick="
+        let pnds= document.getElementById('pnds').value;
+        let shls= document.getElementById('shls').value;
+        let pnce= document.getElementById('pnce').value;
+        pnds = Number(pnds);
+        shls = Number(shls);
+        pnce = Number(pnce);
+        /* Or Just do the conversion in one line like pnce ^ */
+        let decp = pnds + shl/20 + pnce/12/20;
+        decp = decp.toFixed(2); /* round to 2 demical places */
+        document.writeln('Decimcal Pounds = £' + decp);
+    ">Calculate</button>
+</html>
